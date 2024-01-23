@@ -1,1 +1,0 @@
-dpu-upmem-dpurte-clang CMakeFiles/program_dpu.dir/program_dpu.c.o -o program_dpu 
