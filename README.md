@@ -9,10 +9,10 @@ To run the programs you need to have the following
 2. For Homomophic Operations install the OpenFHE library see https://www.openfhe.org/
 
 # To run the program:
-mkdir -p build
-cd /build
-cmake ..
-make
+mkdir -p build  
+cd ./build  
+cmake ..  
+make  
 ./xxxx_host
 
 
