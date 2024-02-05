@@ -58,7 +58,7 @@ int main()
 
   // // Allocate dpus
   auto system = DpuSet::allocate(1);
-  auto dpu = system.dpus()[0];
+  auto dpu = system.dpus()[0];pim
   std::vector<long> data{0x0706050403020100l};
   std::vector<std::vector<long>> results{std::vector<long>(1)};
 
