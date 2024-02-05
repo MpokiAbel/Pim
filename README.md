@@ -1,5 +1,5 @@
 # UPMEM-PIM
-This is the introduction of Project UPMEM-HOMOMOPHI - In-Memory Processing on Encrypted Data
+This is the introduction of Project UPMEM-HOMOMOPHIC : In-Memory Processing on Encrypted Data
 
 The main idea is Evaluate the types of operations that can be done over encrypted data on UPMEM chips and that provide performance benefits over migrating the data to main memory.
 

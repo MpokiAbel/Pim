@@ -3,11 +3,8 @@
  */
 
 #include "openfhe.h"
-#include <dpu>
-#include <iomanip>
-#include <iostream>
+#include "dpu_host_helpers.h"
 
-using namespace dpu;
 using namespace lbcrypto;
 
 int main()
@@ -55,23 +52,7 @@ int main()
   auto ciphertext3 = cryptoContext->Encrypt(keyPair.publicKey, plaintext3);
 
   // Sample Program: Step 4: Evaluation
-
-  // // Allocate dpus
-  auto system = DpuSet::allocate(1);
-  auto dpu = system.dpus()[0];pim
-  std::vector<long> data{0x0706050403020100l};
-  std::vector<std::vector<long>> results{std::vector<long>(1)};
-
-  dpu->load("program_dpu");
-  dpu->copy("my_var", data);
-  dpu->exec();
-  dpu->log(std::cout);
-  dpu->copy(results, "my_var");
-
-  long value = results[0][0];
-
-  std::cout << "My_Var after = 0x" << std::setfill('0') << std::setw(16) << std::hex << value << std::endl;
-
+  run_on_dpu();
   // Homomorphic additions
   auto ciphertextAdd12 = cryptoContext->EvalAdd(ciphertext1, ciphertext2);
   auto ciphertextAddResult = cryptoContext->EvalAdd(ciphertextAdd12, ciphertext3);
