@@ -5,8 +5,8 @@ The main idea is Evaluate the types of operations that can be done over encrypte
 
 # Installation 
 To run the programs you need to have the following
-1. UPMEM TOOLCHAIN INSTALLED for further infomation see the usermanual https://sdk.upmem.com/stable/01_Install.html
-2. For Homomophic Operations install the OpenFHE library see https://github.com/openfheorg/openfhe-development
+1. UPMEM TOOLCHAIN INSTALLED for further infomation see the [usermanual] (https://sdk.upmem.com/stable/01_Install.html)
+2. For Homomophic Operations install the [OpenFHE library] (https://github.com/openfheorg/openfhe-development)
 
 This project contains a CMAKE file that intergrates both the UPMEM TOOLCHAIN and the OPENFHE library. If specific features are desired feel free to modify the CMakeLists.txt.
 
@@ -18,4 +18,11 @@ cd ./build
 cmake ..  
 make  
 ./xxxx_host
+
+
+List of Papers:
+
+1.[A Case Study of Processing-in-Memory in off-the-Shelf Systems](https://www.usenix.org/system/files/atc21-nider.pdf)
+2. [Benchmarking a New Paradigm: An Experimental Analysis of a Real Processing-in-Memory Architecture](https://arxiv.org/pdf/2105.03814.pdf%C3%82%C2%A0%C3%82%C2%A0)
+
 

@@ -52,7 +52,9 @@ int main()
   auto ciphertext3 = cryptoContext->Encrypt(keyPair.publicKey, plaintext3);
 
   // Sample Program: Step 4: Evaluation
-  run_on_dpu();
+  // std::vector<long> data{0x0706050403020100l};
+  run_on_dpu(ciphertext1);
+
   // Homomorphic additions
   auto ciphertextAdd12 = cryptoContext->EvalAdd(ciphertext1, ciphertext2);
   auto ciphertextAddResult = cryptoContext->EvalAdd(ciphertextAdd12, ciphertext3);
@@ -92,18 +94,18 @@ int main()
   plaintextRot3->SetLength(vectorOfInts1.size());
   plaintextRot4->SetLength(vectorOfInts1.size());
 
-  std::cout << "Plaintext #1: " << plaintext1 << std::endl;
-  std::cout << "Plaintext #2: " << plaintext2 << std::endl;
-  std::cout << "Plaintext #3: " << plaintext3 << std::endl;
+  // std::cout << "Plaintext #1: " << plaintext1 << std::endl;
+  // std::cout << "Plaintext #2: " << plaintext2 << std::endl;
+  // std::cout << "Plaintext #3: " << plaintext3 << std::endl;
 
-  // Output results
-  std::cout << "\nResults of homomorphic computations" << std::endl;
-  std::cout << "#1 + #2 + #3: " << plaintextAddResult << std::endl;
-  std::cout << "#1 * #2 * #3: " << plaintextMultResult << std::endl;
-  std::cout << "Left rotation of #1 by 1: " << plaintextRot1 << std::endl;
-  std::cout << "Left rotation of #1 by 2: " << plaintextRot2 << std::endl;
-  std::cout << "Right rotation of #1 by 1: " << plaintextRot3 << std::endl;
-  std::cout << "Right rotation of #1 by 2: " << plaintextRot4 << std::endl;
+  // // Output results
+  // std::cout << "\nResults of homomorphic computations" << std::endl;
+  // std::cout << "#1 + #2 + #3: " << plaintextAddResult << std::endl;
+  // std::cout << "#1 * #2 * #3: " << plaintextMultResult << std::endl;
+  // std::cout << "Left rotation of #1 by 1: " << plaintextRot1 << std::endl;
+  // std::cout << "Left rotation of #1 by 2: " << plaintextRot2 << std::endl;
+  // std::cout << "Right rotation of #1 by 1: " << plaintextRot3 << std::endl;
+  // std::cout << "Right rotation of #1 by 2: " << plaintextRot4 << std::endl;
 
   return 0;
 }
