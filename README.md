@@ -23,6 +23,6 @@ make
 # List of Papers (References):
 
 1.[A Case Study of Processing-in-Memory in off-the-Shelf Systems](https://www.usenix.org/system/files/atc21-nider.pdf)  
-2.[Benchmarking a New Paradigm: An Experimental Analysis of a Real Processing-in-Memory Architecture](https://arxiv.org/pdf/2105.03814.pdf%C3%82%C2%A0%C3%82%C2%A0)
-3.[SoK: New Insights into Fully Homomorphic Encryption Libraries via Standardized Benchmarks](https://eprint.iacr.org/2022/425.pdf)
+2.[Benchmarking a New Paradigm: An Experimental Analysis of a Real Processing-in-Memory Architecture](https://arxiv.org/pdf/2105.03814.pdf%C3%82%C2%A0%C3%82%C2%A0)  
+3.[SoK: New Insights into Fully Homomorphic Encryption Libraries via Standardized Benchmarks](https://eprint.iacr.org/2022/425.pdf)  
 4.[FHEmem: A Processing In-Memory Accelerator for Fully Homomorphic Encryption](https://arxiv.org/pdf/2311.16293.pdf)
