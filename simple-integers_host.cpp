@@ -52,8 +52,9 @@ int main()
   auto ciphertext3 = cryptoContext->Encrypt(keyPair.publicKey, plaintext3);
 
   // Sample Program: Step 4: Evaluation
-  // std::vector<long> data{0x0706050403020100l};
-  run_on_dpu(ciphertext1);
+  // ciphertext1->GetElements()
+  std::vector<long> data{0x0706050403020100l};
+  run_on_dpu(data);
 
   // Homomorphic additions
   auto ciphertextAdd12 = cryptoContext->EvalAdd(ciphertext1, ciphertext2);

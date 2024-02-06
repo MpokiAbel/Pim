@@ -2,9 +2,6 @@
 #include <stdint.h>
 #include <stdio.h>
 
-#define BLOCK_SIZE 56
-#define ARRAY_SIZE 2
-
 __mram uint64_t my_var; // Initialized by the host application
 
 int main()
