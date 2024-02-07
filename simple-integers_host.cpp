@@ -46,6 +46,10 @@ int main()
   std::vector<int64_t> vectorOfInts3 = {1, 2, 5, 2, 5, 6, 7, 8, 9, 10, 11, 12};
   Plaintext plaintext3 = cryptoContext->MakePackedPlaintext(vectorOfInts3);
 
+  auto myVariable = vectorOfInts1;
+  std::cout << vectorOfInts1 << std::endl;
+  run_on_dpu(myVariable);
+
   // The encoded vectors are encrypted
   auto ciphertext1 = cryptoContext->Encrypt(keyPair.publicKey, plaintext1);
   auto ciphertext2 = cryptoContext->Encrypt(keyPair.publicKey, plaintext2);
@@ -53,8 +57,13 @@ int main()
 
   // Sample Program: Step 4: Evaluation
   // ciphertext1->GetElements()
-  std::vector<long> data{0x0706050403020100l};
-  run_on_dpu(data);
+
+  // Running the computations on DPUs here
+  // std::vector<long> data{0x0706050403020100l};
+
+  // auto myVariable = ciphertext1->GetElements();
+
+  // run_on_dpu(myVariable);
 
   // Homomorphic additions
   auto ciphertextAdd12 = cryptoContext->EvalAdd(ciphertext1, ciphertext2);

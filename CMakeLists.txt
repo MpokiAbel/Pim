@@ -10,7 +10,7 @@ set(CMAKE_C_COMPILER "dpu-upmem-dpurte-clang")
 # Set the dpu library name
 set(DPU_PKG_NAME "dpu")
 
-# OpenFHE 
+# OpenFHE SETUP
 set(CMAKE_CXX_STANDARD 17)
 option( BUILD_STATIC "Set to ON to include static versions of the library" OFF)
 
@@ -70,9 +70,6 @@ foreach(source_file ${SOURCE_FILES})
         target_link_libraries(${target_name} PRIVATE ${DPU_LIBS})
         
         target_compile_options(${target_name} PRIVATE -g)
-
-
- 
 
 
     endif()

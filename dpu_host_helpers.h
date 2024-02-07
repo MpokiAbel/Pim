@@ -8,7 +8,7 @@
 #include <iostream>
 
 #ifndef DPU_EXE
-#define DPU_EXE "program_dpu"
+#define DPU_EXE "simple-integers_dpu"
 #endif
 
 using namespace dpu;
@@ -28,7 +28,7 @@ template <class T>
 void run_on_dpu(std::vector<T> &data, int dpu_num = 1)
 {
     auto system = DpuSet::allocate(dpu_num);
-    std::vector<std::vector<T>> results{std::vector<T>(1)};
+    std::vector<std::vector<T>> results{std::vector<T>(14)};
 
     for (int i = 0; i < dpu_num; i++)
     {
@@ -38,9 +38,11 @@ void run_on_dpu(std::vector<T> &data, int dpu_num = 1)
         dpu->copy("my_var", data);
         dpu->exec();
         dpu->log(std::cout);
-        // dpu->copy(results, "my_var");
+        dpu->copy(results, "my_var");
 
-        // T value = results[0][0];
+        std::vector<T> value = results[0];
+
+        std::cout<<value<<std::endl;
 
         // std::cout << "DPU " << i << " My_Var after = 0x" << std::setfill('0') << std::setw(16) << std::hex << value << std::endl;
     }
