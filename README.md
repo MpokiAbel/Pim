@@ -27,3 +27,4 @@ make
 3.[SoK: New Insights into Fully Homomorphic Encryption Libraries via Standardized Benchmarks](https://eprint.iacr.org/2022/425.pdf)  
 4.[FHEmem: A Processing In-Memory Accelerator for Fully Homomorphic Encryption](https://arxiv.org/pdf/2311.16293.pdf)  
 5.[OpenFHE: Open-Source Fully Homomorphic Encryption Library∗](https://eprint.iacr.org/2022/915.pdf)  
+6.[Evaluating Homomorphic Operations on a Real-World Processing-In-Memory System](https://arxiv.org/pdf/2309.06545.pdf)
