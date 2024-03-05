@@ -8,6 +8,6 @@
 6.[Evaluating Homomorphic Operations on a Real-World Processing-In-Memory System](https://arxiv.org/pdf/2309.06545.pdf)  
 7.[Does Fully Homomorphic Encryption Need Compute Acceleration?](https://eprint.iacr.org/2021/1636.pdf)  
 8.[F1: A Fast and Programmable Accelerator for Fully Homomorphic Encryption (Extended Version)](https://arxiv.org/pdf/2109.05371.pdf)  
-9.[A New Perspective on Key Switching for BGV-like Schemes](https://eprint.iacr.org/2023/1642.pdf)
-10.[BTS: An Accelerator for Bootstrappable Fully Homomorphic Encryption](https://dl.acm.org/doi/pdf/10.1145/3470496.3527415)
+9.[A New Perspective on Key Switching for BGV-like Schemes](https://eprint.iacr.org/2023/1642.pdf)  
+10.[BTS: An Accelerator for Bootstrappable Fully Homomorphic Encryption](https://dl.acm.org/doi/pdf/10.1145/3470496.3527415)  
 11.[Intel HEXL: Accelerating Homomorphic Encryption with Intel AVX512-IFMA52](https://dl.acm.org/doi/pdf/10.1145/3474366.3486926)
