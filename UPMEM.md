@@ -53,8 +53,9 @@ The project code and installation is avalable [here](https://github.com/MpokiAbe
 
 ToDo:
 1. Make the memory management of the dpu efficient.
-2. Performs an indepth evaluation of the addition operations - Get an idea from the benchmarking evaluations.
-3. Evaluate the execution of multiplications and Rotations operation.
-4. Deploy the operations to the DPU as well.
-5. Trace the problem resulting from the DPU errors
-6. Study the benchmarks avalable for performance measurements.
+2. Make the host application know the maximum it can send to the DPU which is 64MB max. Hence would need to split the ciphertext equally for the vector additions. 
+3. Performs an indepth evaluation of the addition operations - Get an idea from the benchmarking evaluations.
+4. Evaluate the execution of multiplications and Rotations operation.
+5. Deploy the operations to the DPU as well.
+6. Trace the problem resulting from the DPU errors
+7. Study the benchmarks avalable for performance measurements.
