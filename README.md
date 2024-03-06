@@ -22,4 +22,4 @@ We would like to compare the cost of several scenarios:
 
 This would provide us with a good survey of the kind of algorithms we can (relatively easily) execute on PIM DRAM over encrypted data, for which we have performance benefits.
 
-For more details on progress of the project click [here](UPMEM) 
+For more details on progress of the project click [here](UPMEM.md) 
