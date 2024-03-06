@@ -48,3 +48,13 @@ but rather memory-bound. And it makes alot of sense to look into these operation
 and in sequesnce to that bootstraping is essential to reduce noise.  
 
 # Project
+The project code and installation is avalable [here](https://github.com/MpokiAbel/UPMEM-OpenFHE)  
+
+
+ToDo:
+1. Make the memory management of the dpu efficient.
+2. Performs an indepth evaluation of the addition operations - Get an idea from the benchmarking evaluations.
+3. Evaluate the execution of multiplications and Rotations operation.
+4. Deploy the operations to the DPU as well.
+5. Trace the problem resulting from the DPU errors
+6. Study the benchmarks avalable for performance measurements.
