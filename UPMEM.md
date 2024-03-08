@@ -59,3 +59,8 @@ ToDo:
 5. Deploy the operations to the DPU as well.
 6. Trace the problem resulting from the DPU errors
 7. Study the benchmarks avalable for performance measurements.
+
+Brainstroming:
+1. Before running the addition operations make sure the DPUs are already initialized.
+2. We can load the programs on the DPU depending on the particular functionality e.g Addition, multiplication etc
+3. At the moment we have to load the values by ourselve but a more efficient way should be looked for.
