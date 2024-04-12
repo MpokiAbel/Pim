@@ -11,7 +11,7 @@ ToDo: Find more possible research directive.
 
 ## Trusted Execution Environmets (TEE)
 TEE can be see as the secure regions within the CPUs. Projects proposed in this area are as follows:
-1. Run Privacy-Preserving Data Processing in the kernel w/ TEE+eBPF, e.g., while processing network packets. 
+1. [Privacy-Preserving Data Processing in the kernel w/ TEE+eBPF](TEE/eBPF/eBPF.md). 
 ToDo: Search for possible research directions on this field
 
 ## Secure Multi-Party Computations (sMPC)
