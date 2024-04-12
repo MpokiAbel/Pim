@@ -1,25 +1,19 @@
-# Project P4
-This is the introduction of Project P4 (Practical Privacy Preserving Processing).
+# Project P4 - Practical Privacy Preserving Processing
+In this project we aim to dive but not limited to the following PETs:
+1.Homomophic Encryption
+2.Trusted Execution Environments
+3.Secure Multi-Party Computations
 
-## In-Memory Processing on Encrypted Data
+## Homomophic Encryption (HE)
+HE is a technique where computations can be performed on the encrypted data. Projects proposed in this area are as follows:
+1. [In-Memory Processing on Encrypted Data]()
+ToDo: Find more possible research directive.
 
-### Objective:
-Evaluate the types of operations that can be done over encrypted data on UPMEM chips and that provide performance benefits over migrating the data to main memory.
+## Trusted Execution Environmets
+TEE can be see as the secure regions within the CPUs. Projects proposed in this area are as follows:
+1. Run Privacy-Preserving Data Processing in the kernel w/ TEE+eBPF, e.g., while processing network packets. 
+ToDo: Search for possible research directions on this field
 
-The main idea is to evaluate the types of operations that can be done over encrypted data on UPMEM Chips and that provide performance benefits over migrating the data to main memory.
-
-The operations include but not limited to:
-1. Search/query
-2. Filter
-3. Summarize/aggregate/Count
-
-### Steps:
-We would like to compare the cost of several scenarios:
-1. Implement the algorithm with UPMEM SDK and do the operation directly on PIM DRAM.
-2. Copy data from PIM DRAM to main CPU; do the operation over encrypted data on CPU.
-3. Copy data from PIM DRAM to main CPU and do the operation in SGX enclave (decrypting it in the enclave).
-4. As baseline but insecure: copy data from PIM DRAM to main CPU, decrypt, and do the operation over plain data on CPU.
-
-This would provide us with a good survey of the kind of algorithms we can (relatively easily) execute on PIM DRAM over encrypted data, for which we have performance benefits.
-
-For more details on progress of the project click [here](UPMEM.md) 
+## Secure Multi-Party Computations
+SMPC is a paradigm where parties jointly perform a functions over their individual inputs while keeping their inputs private.
+No example project for this !! ToDo: Search for possible research directions
