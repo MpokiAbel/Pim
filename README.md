@@ -6,7 +6,7 @@ In this project we aim to dive but not limited to the following PETs:
 
 ## Homomophic Encryption (HE)
 HE is a technique where computations can be performed on the encrypted data. Projects proposed in this area are as follows:
-- [In-Memory Processing on Encrypted Data](HE/PIM/pim.md)
+- [In-Memory Processing on Encrypted Data](HE/PIM/pim.md)  
 ToDo: Find more possible research directive.
 
 ## Trusted Execution Environmets (TEE)
