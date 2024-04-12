@@ -10,7 +10,7 @@ HE is a technique where computations can be performed on the encrypted data. Pro
 ToDo: Find more possible research directive.
 
 ## Trusted Execution Environmets (TEE)
-TEE can be see as the secure regions within the CPUs. Projects proposed in this area are as follows:
+TEE can be see as the secure regions within the CPUs where computations can be done while preserving confidentaility and integrity of the processed data. Projects proposed in this area are as follows:
 - [Privacy-Preserving Data Processing in the kernel w/ TEE+eBPF](TEE/eBPF/eBPF.md).  
 ToDo: Search for possible research directions on this field
 
