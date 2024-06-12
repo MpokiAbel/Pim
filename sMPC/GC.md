@@ -15,8 +15,8 @@ Before starting the protocol both parties (Alice and Bob) need to know the funct
 5. Alice and Bob communicates to learn the output.
 	
 ## Garbling Process
-1.Alice (the Garbler) assigns two random k-bit labels (usually 128 bits) to each wire in the circuit, representing the Boolean values 0 and 1.
-2.A truth table is created with the randomly chosen labels, and the output is encrypted using double key encryption, with the keys being the corresponding input labels.
+1. Alice (the Garbler) assigns two random k-bit labels (usually 128 bits) to each wire in the circuit, representing the Boolean values 0 and 1.
+2. A truth table is created with the randomly chosen labels, and the output is encrypted using double key encryption, with the keys being the corresponding input labels.
 
 ## Oblivious Transfer
 ## Evaluation and Revealing the outputs
