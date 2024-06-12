@@ -16,5 +16,4 @@ ToDo: Search for possible research directions on this field
 
 ## Secure Multi-Party Computations (sMPC)
 sMPC is a paradigm where parties jointly perform a functions over their individual inputs while keeping their inputs private. Projects proposed in this area are as follows:
-- [Garble Circuits acceleration using PIM](sMPC/GC.md)
-No example project for this !! ToDo: Search for possible research directions
+- [Garble Circuits acceleration using PIM](sMPC/GC.md) 
