@@ -25,4 +25,5 @@ Before starting the protocol both parties (Alice and Bob) need to know the funct
 - Malicious
 
 # Related Work
-- [MAGE](https://www.usenix.org/conference/osdi21/presentation/kumar)
+- [MAGE](https://www.usenix.org/conference/osdi21/presentation/kumar) is an execution engine or memory planner for Secure Computation (SC) that handles computations exceeding available memory. It was created based on the observation that SC schemes are inherently oblivious, meaning their memory access patterns are independent of the input data hence could be predicted/ planned in advance. By predicting these patterns, MAGE creates an efficient memory management plan, allowing SC computations to run almost as fast as if there were unlimited physical memory, significantly outperforming traditional OS virtual memory system.
+- [Piranha]() 
