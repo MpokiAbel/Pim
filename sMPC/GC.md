@@ -30,4 +30,4 @@ Before starting the protocol both parties (Alice and Bob) need to know the funct
 - [Faster Secure Computation through Automatic Parallelization](https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-buescher.pdf)
 - [GPU and CPU Parallelization of Honest-but-Curious Secure Two-Party Computation](https://shelat.khoury.northeastern.edu/dl/hmsg13-gpuyao.pdf)
 - [GraphSC: Parallel Secure Computation Made Easy](https://www.ieee-security.org/TC/SP2015/papers-archived/6949a377.pdf)
-- [Secure Multiparty Computation and Trusted Hardware: Examining Adoption Challenges and Opportunities] https://onlinelibrary.wiley.com/doi/epdf/10.1155/2019/1368905)
+- [Secure Multiparty Computation and Trusted Hardware: Examining Adoption Challenges and Opportunities](https://onlinelibrary.wiley.com/doi/epdf/10.1155/2019/1368905)
