@@ -5,6 +5,10 @@ This is project is about Garbled Circuits, and their integration with the UPMEM 
 A cryptographic protocol that enable two mistrusting parties to evaluate a function without revealing their private input without presence of third trusted party. For better explanation of the protocol visit [here](https://en.wikipedia.org/wiki/Garbled_circuit). There quite a few libraries with GC implementations, here is a non-exhastive list:
 - [TinyGarble](https://github.com/IntelLabs/TinyGarble2.0)
 
+## Usecases for GC
+- User Password Reuse Detection between companies. To be explained
+- Generic screening service. To be explained
+
 ## Security Settings
 - Semi-honest
 - Malicious
