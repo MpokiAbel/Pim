@@ -17,9 +17,9 @@ A cryptographic protocol that enable two mistrusting parties to evaluate a funct
 
 # Overhead of GC
 There is a high overhead that accelerators are required to overcome, the factors contibuting to the overhead are as follows:
-* Executing each GCs gate entails significant amount of computation, typically the GC gates are cryptograpphic fucntions, distinct from plaintext gates.
-          * E.g a single AND gate may involve for AES calls, two key expansions and varieties of of 128-bit logic operations.
-* Processing a function requires executing a large number of gate example certain implementation of bubble sort requires processing over 12M gates.            
+* Executing each GCs gate entails significant amount of computation, typically the GC gates are cryptograpphic fucntions, distinct from plaintext gates.  
+          * E.g a single AND gate may involve for AES calls, two key expansions and varieties of of 128-bit logic operations.  
+* Processing a function requires executing a large number of gate example certain implementation of bubble sort requires processing over 12M gates.             
 
 # Related Work
 - [MAGE 2021](https://www.usenix.org/conference/osdi21/presentation/kumar) is an execution engine or memory planner for Secure Computation (SC) that handles computations exceeding available memory. It was created based on the observation that SC schemes are inherently oblivious, meaning their memory access patterns are independent of the input data hence could be predicted/planned in advance. By predicting these patterns, MAGE creates an efficient memory management plan, allowing SC computations to run almost as fast as if there were unlimited physical memory, significantly outperforming traditional OS virtual memory system.
