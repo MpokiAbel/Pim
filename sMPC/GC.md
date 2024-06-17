@@ -11,7 +11,7 @@ A cryptographic protocol that enable two mistrusting parties to evaluate a funct
 
 ## Security Model
 - `Semi-honest` model ensures that untended information is never revealed to the conter-parties provided that they follow the protocol. The original GC protocol falls under this model.
-- `Malicious` model the advesary tries to go around the protocols it has variants which include:
+- `Malicious` model the advesary tries to go around the protocols it has variants which include:  
           - `Cut and Choose` model make the circuit generator to create copies of the encrypted circuit and send to the evaluator and choose 60% of them and has to verify that all the circuit are legitimate implementation of the function f otherwise quits.  
           - `On bit Leaked`  model make both parties to play the role of the generator and the garbler
 
