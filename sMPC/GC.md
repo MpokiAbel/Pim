@@ -22,5 +22,5 @@ A cryptographic protocol that enable two mistrusting parties to evaluate a funct
 - [GPU and CPU Parallelization of Honest-but-Curious Secure Two-Party Computation 2013](https://shelat.khoury.northeastern.edu/dl/hmsg13-gpuyao.pdf)
 - [GraphSC: Parallel Secure Computation Made Easy 2015](https://www.ieee-security.org/TC/SP2015/papers-archived/6949a377.pdf)
 - [Secure Multiparty Computation and Trusted Hardware: Examining Adoption Challenges and Opportunities](https://onlinelibrary.wiley.com/doi/epdf/10.1155/2019/1368905)
-- [HAAC: A Hardware-Software Co-Design to Accelerate Garbled Circuits](https://arxiv.org/pdf/2211.13324)
+- [HAAC: A Hardware-Software Co-Design to Accelerate Garbled Circuits 2023](https://arxiv.org/pdf/2211.13324)
 - [Faster Maliciously Secure Two-Party Computation Using the GPU 2014](https://eprint.iacr.org/2014/270.pdf)
