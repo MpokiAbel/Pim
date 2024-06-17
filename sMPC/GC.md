@@ -12,8 +12,8 @@ A cryptographic protocol that enable two mistrusting parties to evaluate a funct
 ## Security Model
 - `Semi-honest` model ensures that untended information is never revealed to the conter-parties provided that they follow the protocol. The original GC protocol falls under this model.
 - `Malicious` model the advesary tries to go around the protocols it has variants which include:  
-          - `Cut and Choose` model make the circuit generator to create copies of the encrypted circuit and send to the evaluator and choose 60% of them and has to verify that all the circuit are legitimate implementation of the function f otherwise quits.  
-          - `On bit Leaked`  model make both parties to play the role of the generator and the garbler
+          -  `Cut and Choose` model make the circuit generator to create copies of the encrypted circuit and send to the evaluator and choose 60% of them and has to verify that all the circuit are legitimate implementation of the function f otherwise quits.  
+          -  `On bit Leaked`  model make both parties to play the role of the generator and the garbler
 
 # Related Work
 - [MAGE](https://www.usenix.org/conference/osdi21/presentation/kumar) is an execution engine or memory planner for Secure Computation (SC) that handles computations exceeding available memory. It was created based on the observation that SC schemes are inherently oblivious, meaning their memory access patterns are independent of the input data hence could be predicted/planned in advance. By predicting these patterns, MAGE creates an efficient memory management plan, allowing SC computations to run almost as fast as if there were unlimited physical memory, significantly outperforming traditional OS virtual memory system.
