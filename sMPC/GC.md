@@ -23,7 +23,9 @@ There is a high overhead that accelerators are required to overcome, the factors
 * GC are data intensive, each plaintext gate's inputs and outputs are represented as a 128-bit ciphertext and each (AND) gate involves a unique 32 Byte crytographic constant for processing.
         
 # How to improve GC performance using PIM
-The usecase of PIM is the UPMEM PIM modules, which provides the data processing units (DPUs) as compute units close to where the data is stored. UPMEME PIM modules are DDR4 DIMM modules comprising f 8 DDR4 chips. The current configuration has each DDR4 chip composed of 2 DPU ranks where a rank consists of 64 DPUs. 
+The use case of PIM involves UPMEM PIM modules, which provide data processing units (DPUs) as compute units close to where the data is stored. UPMEM PIM modules are DDR4 DIMM modules comprising eight DDR4 chips. The current configuration has each DDR4 chip composed of two DPU ranks, where each rank consists of 64 DPUs. Therefore, there are 512 DPUs in a single DIMM module. 
+
+To operate the DPUs, the host program must orchestrate the operations. This involves allocating and launching the DPUs, loading binaries, and copying data to and from the DPU memory. To maximize the performance of the UPMEM PIM, it is necessary to minimize off-chip data movements, i.e., DPU-CPU copies. 
 
 # Related Work
 - [MAGE 2021](https://www.usenix.org/conference/osdi21/presentation/kumar) is an execution engine or memory planner for Secure Computation (SC) that handles computations exceeding available memory. It was created based on the observation that SC schemes are inherently oblivious, meaning their memory access patterns are independent of the input data hence could be predicted/planned in advance. By predicting these patterns, MAGE creates an efficient memory management plan, allowing SC computations to run almost as fast as if there were unlimited physical memory, significantly outperforming traditional OS virtual memory system.
