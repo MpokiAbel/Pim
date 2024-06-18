@@ -34,6 +34,6 @@ To operate the DPUs, the host program must orchestrate the operations. This invo
 - [GPU and CPU Parallelization of Honest-but-Curious Secure Two-Party Computation 2013](https://shelat.khoury.northeastern.edu/dl/hmsg13-gpuyao.pdf)
 - [GraphSC: Parallel Secure Computation Made Easy 2015](https://www.ieee-security.org/TC/SP2015/papers-archived/6949a377.pdf)
 - [Secure Multiparty Computation and Trusted Hardware: Examining Adoption Challenges and Opportunities](https://onlinelibrary.wiley.com/doi/epdf/10.1155/2019/1368905)
-- [HAAC: A Hardware-Software Co-Design to Accelerate Garbled Circuits 2023](https://arxiv.org/pdf/2211.13324)
+- [HAAC: A Hardware-Software Co-Design to Accelerate Garbled Circuits 2023](https://arxiv.org/pdf/2211.13324) In this paper, they design both an ASIC-based hardware accelerator for Garbled Circuit (GC) and a compiler that compiles the code to fit into the dedicated hardware. Their main observation is that the GC programs are completely known at compile time, i.e., all dependencies, memory accesses, and control flow are fixed.  
 - [Faster Maliciously Secure Two-Party Computation Using the GPU 2014](https://eprint.iacr.org/2014/270.pdf)
 - [SoK: General Purpose Compilers for Secure Multi-Party Computation](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8835312)
