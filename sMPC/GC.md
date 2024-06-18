@@ -20,8 +20,11 @@ There is a high overhead that accelerators are required to overcome, the factors
 * Executing each GCs gate entails significant amount of computation, typically the GC gates are cryptograpphic fucntions, distinct from plaintext gates.  
           * E.g a single AND gate may involve for AES calls, two key expansions and varieties of of 128-bit logic operations.  
 * Processing a function requires executing a large number of gate example certain implementation of bubble sort requires processing over 12M gates.
-* GC are data intensive, each plaintext gate's inputs and outputs are represented as a 128-bit ciphertext and each (AND) gate involves a unique 32 Byte crytographic constant for processing.            
+* GC are data intensive, each plaintext gate's inputs and outputs are represented as a 128-bit ciphertext and each (AND) gate involves a unique 32 Byte crytographic constant for processing.
+        
 # How to improve GC performance using PIM
+The usecase of PIM is the UPMEM PIM modules, which provides the data processing units (DPUs) as compute units close to where the data is stored. UPMEME PIM modules are DDR4 DIMM modules comprising f 8 DDR4 chips. The current configuration has each DDR4 chip composed of 2 DPU ranks where a rank consists of 64 DPUs. 
+
 # Related Work
 - [MAGE 2021](https://www.usenix.org/conference/osdi21/presentation/kumar) is an execution engine or memory planner for Secure Computation (SC) that handles computations exceeding available memory. It was created based on the observation that SC schemes are inherently oblivious, meaning their memory access patterns are independent of the input data hence could be predicted/planned in advance. By predicting these patterns, MAGE creates an efficient memory management plan, allowing SC computations to run almost as fast as if there were unlimited physical memory, significantly outperforming traditional OS virtual memory system.
 - [Piranha 2022](https://www.usenix.org/system/files/sec22-watson.pdf) is a platform that accelerates secure multi-party computation (MPC) using GPUs, simplifying the process for developers without requiring GPU expertise. They achive this by having a three layered achitecture most importantly the Device layer which provides the GPUs abstraction and give access to the integer kernels .Their demonstration is based on three linear secret sharing protocols for secure NN training.
