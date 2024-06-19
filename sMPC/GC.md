@@ -10,10 +10,10 @@ A cryptographic protocol that enable two mistrusting parties to evaluate a funct
 - Generic screening service. To be explained
 
 ## Security Models
-- `Semi-honest` model ensures that untended information is never revealed to the conter-parties provided that they follow the protocol. The original GC protocol falls under this model.
-- `Malicious` model the advesary tries to go around the protocols it has variants which include:  
-          -  `Cut and Choose` model make the circuit generator to create copies of the encrypted circuit and send to the evaluator and choose 60% of them and has to verify that all the circuit are legitimate implementation of the function f otherwise quits.  
-          -  `On bit Leaked`  model make both parties to play the role of the generator and the evaluator, therefore each party generates a circuit and send it to the other to evaluate. After the procedure a special protocol follows to validate the outputs at both ends.
+- The `Semi-honest` model ensures that unintended information is never revealed to the counter-parties, provided that they follow the protocol. The original GC protocol falls under this model.
+- In the `Malicious` model, the adversary tries to circumvent the protocols. It has variants which include:
+  - The `Cut and Choose` model makes the circuit generator create copies of the encrypted circuit and send them to the evaluator. The evaluator chooses 60% of them and verifies that all the circuits are legitimate implementations of the function \( f \); otherwise, the protocol is aborted.
+  - The `One Bit Leaked` model makes both parties play the role of the generator and the evaluator. Each party generates a circuit and sends it to the other for evaluation. After this procedure, a special protocol follows to validate the outputs at both ends.
 
 # Overhead of GC
 There is a high overhead that accelerators are required to overcome. The factors contributing to the overhead are as follows:
