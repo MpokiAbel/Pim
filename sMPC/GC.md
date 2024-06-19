@@ -16,11 +16,13 @@ A cryptographic protocol that enable two mistrusting parties to evaluate a funct
           -  `On bit Leaked`  model make both parties to play the role of the generator and the evaluator, therefore each party generates a circuit and send it to the other to evaluate. After the procedure a special protocol follows to validate the outputs at both ends.
 
 # Overhead of GC
-There is a high overhead that accelerators are required to overcome, the factors contibuting to the overhead are as follows:
-* Executing each GCs gate entails significant amount of computation, typically the GC gates are cryptograpphic fucntions, distinct from plaintext gates.  
-          * E.g a single AND gate may involve for AES calls, two key expansions and varieties of of 128-bit logic operations.  
-* Processing a function requires executing a large number of gate example certain implementation of bubble sort requires processing over 12M gates.
-* GC are data intensive, each plaintext gate's inputs and outputs are represented as a 128-bit ciphertext and each (AND) gate involves a unique 32 Byte crytographic constant for processing.
+There is a high overhead that accelerators are required to overcome. The factors contributing to the overhead are as follows:
+
+* Executing each GC gate entails a significant amount of computation. Typically, the GC gates are cryptographic functions, distinct from plaintext gates.
+  * E.g., a single AND gate may involve four AES calls, two key expansions, and a variety of 128-bit logic operations.
+* Processing a function requires executing a large number of gates. For example, certain implementations of bubble sort require processing over 12M gates.
+* GCs are data-intensive. Each plaintext gate's inputs and outputs are represented as a 128-bit ciphertext, and each (AND) gate involves a unique 32-byte cryptographic constant for processing.
+
         
 # How to improve GC performance using PIM
 The use case of PIM involves UPMEM PIM modules, which provide data processing units (DPUs) as compute units close to where the data is stored. UPMEM PIM modules are DDR4 DIMM modules comprising eight DDR4 chips. The current configuration has each DDR4 chip composed of two DPU ranks, where each rank consists of 64 DPUs. Therefore, there are 512 DPUs in a single DIMM module. 
