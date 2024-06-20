@@ -30,19 +30,19 @@ The use case of PIM involves UPMEM PIM modules, which provide data processing un
 To operate the DPUs, the host program must orchestrate the operations. This involves allocating and launching the DPUs, loading binaries, and copying data to and from the DPU memory. To maximize the performance of the UPMEM PIM, it is necessary to minimize off-chip data movements, i.e., DPU-CPU copies. ToDo: more of UPMEM background on benefits and drawsbacks.
 
 ## Research Question / Problems to be addressed.
-- Can we parallelise the Garble Circuits using the UPMEM PIM ? if so How ?
-  - There is a seemingly a direct relationship between the security model and how a specific GC prococal can be parallelised.
-    - Most literatures claim that the Malicious model is parallelisable by design and semi-honest is a bit complex why?
-  - A naive way of paralleling GC from a bird's view is to have each DPUs work on subset of boolean GATE of the specific function to be evaluated.
-    - How to deal with gates that have dependencies from the other gate ?, is it possible to break them and get the parallel part of the gates?
-    - How does circuit generation, garbling and circuit evaluation different from each other and can they benefic from PIM.
-- How do we minimise the copy cost between the host CPU and the DPUs
-  - Perform compression and decompression before and after the copy operations - Peterson's Idea
-  - Analyse the protocol specific access patterns to avoid unncessary copy operations - Mpoki Idea.
-    - ToDo check how its done for GPUs as they also require copying data.
-  - What to do with the algorithms that need synchronization across DPUs.
+- Can we parallelize the Garbled Circuits using the UPMEM PIM? If so, how?
+  - There is seemingly a direct relationship between the security model and how a specific GC protocol can be parallelized.
+    - Most literature claims that the Malicious model is parallelizable by design, while the Semi-Honest model is a bit more complex. Why is this?
+  - A naive way of parallelizing GC from a bird's eye view is to have each DPU work on a subset of Boolean gates of the specific function to be evaluated.
+    - How can we deal with gates that have dependencies on other gates? Is it possible to break them and get the parallel part of the gates?
+    - How do circuit generation, garbling, and circuit evaluation differ from each other, and can they benefit from PIM?
+- How do we minimize the copy cost between the host CPU and the DPUs?
+  - Perform compression and decompression before and after the copy operations—Peterson's idea.
+  - Analyze the protocol-specific access patterns to avoid unnecessary copy operations—Mpoki's idea.
+    - ToDo: Check how it is done for GPUs as they also require copying data.
+  - What should we do with algorithms that need synchronization across DPUs?
 
-- Generally i would like to have a simple system implemented using Garbled Circuits. 
+- Generally, I would like to have a simple system implemented using Garbled Circuits. 
 
 
 # Related Work
