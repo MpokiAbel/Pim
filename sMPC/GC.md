@@ -41,10 +41,7 @@ To operate the DPUs, the host program must orchestrate the operations. This invo
   - Analyze the protocol-specific access patterns to avoid unnecessary copy operations—Mpoki's idea.
     - ToDo: Check how it is done for GPUs as they also require copying data.
   - What should we do with algorithms that need synchronization across DPUs?
-
-- Generally, I would like to have a simple system implemented using Garbled Circuits. 
-
-
+ 
 # Related Work
 - [MAGE 2021](https://www.usenix.org/conference/osdi21/presentation/kumar) is an execution engine or memory planner for Secure Computation (SC) that handles computations exceeding available memory. It was created based on the observation that SC schemes are inherently oblivious, meaning their memory access patterns are independent of the input data hence could be predicted/planned in advance. By predicting these patterns, MAGE creates an efficient memory management plan, allowing SC computations to run almost as fast as if there were unlimited physical memory, significantly outperforming traditional OS virtual memory system.
 - [Piranha 2022](https://www.usenix.org/system/files/sec22-watson.pdf) is a platform that accelerates secure multi-party computation (MPC) using GPUs, simplifying the process for developers without requiring GPU expertise. They achive this by having a three layered achitecture most importantly the Device layer which provides the GPUs abstraction and give access to the integer kernels .Their demonstration is based on three linear secret sharing protocols for secure NN training.
@@ -54,4 +51,8 @@ To operate the DPUs, the host program must orchestrate the operations. This invo
 - [Secure Multiparty Computation and Trusted Hardware: Examining Adoption Challenges and Opportunities](https://onlinelibrary.wiley.com/doi/epdf/10.1155/2019/1368905)
 - [HAAC: A Hardware-Software Co-Design to Accelerate Garbled Circuits 2023](https://arxiv.org/pdf/2211.13324) In this paper, they design both an ASIC-based hardware accelerator for Garbled Circuit (GC) and a compiler that compiles the code to fit into the dedicated hardware. Their main observation is that the GC programs are completely known at compile time, i.e., all dependencies, memory accesses, and control flow are fixed.  
 - [Faster Maliciously Secure Two-Party Computation Using the GPU 2014](https://eprint.iacr.org/2014/270.pdf)
-- [SoK: General Purpose Compilers for Secure Multi-Party Computation](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8835312) 
+- [SoK: General Purpose Compilers for Secure Multi-Party Computation](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8835312)
+
+# RoadMap
+- [] Implements a simple GC computation
+- [] Indentify parallelism and concurency
