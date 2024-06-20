@@ -54,5 +54,5 @@ To operate the DPUs, the host program must orchestrate the operations. This invo
 - [SoK: General Purpose Compilers for Secure Multi-Party Computation](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8835312)
 
 # RoadMap
--  [] Implements a simple GC computation
--  [] Indentify parallelism and concurency
+-  [ ] Implements a simple GC computation
+-  [ ] Indentify parallelism and concurency
