@@ -1,13 +1,13 @@
 # Introduction
-This is project is about Garbled Circuits, and their integration with the UPMEM PIM
+This project is about Garbled Circuits, and their integration with the UPMEM PIM
 
 ## Project RoadMap
 -  [ ] Implements a simple GC computation
--  [ ] Indentify parallelism and concurency
+-  [ ] Indentify parallelism and concurency : From the literature review, parallelism and concurency should come from the per gate evaluations.
 
 # Garbled Circuit
-A cryptographic protocol that enable two mistrusting parties to evaluate a function without revealing their private input without presence of third trusted party. For better explanation of the protocol visit [here](https://en.wikipedia.org/wiki/Garbled_circuit). There quite a few libraries with GC implementations, here is a non-exhastive list:
-- [TinyGarble](https://github.com/IntelLabs/TinyGarble2.0)
+A cryptographic protocol that enable two mistrusting parties to evaluate a function without revealing their private input without presence of third trusted party. For better explanation of the protocol visit [here](https://en.wikipedia.org/wiki/Garbled_circuit). There are quite a few libraries with GC implementations, here is a non-exhastive list:
+- [TinyGarble2](https://github.com/IntelLabs/TinyGarble2.0)
 
 ## Usecases for GC
 - User Password Reuse Detection between companies. To be explained
@@ -56,3 +56,4 @@ To operate the DPUs, the host program must orchestrate the operations. This invo
 - [HAAC: A Hardware-Software Co-Design to Accelerate Garbled Circuits 2023](https://arxiv.org/pdf/2211.13324) In this paper, they design both an ASIC-based hardware accelerator for Garbled Circuit (GC) and a compiler that compiles the code to fit into the dedicated hardware. Their main observation is that the GC programs are completely known at compile time, i.e., all dependencies, memory accesses, and control flow are fixed.  
 - [Faster Maliciously Secure Two-Party Computation Using the GPU 2014](https://eprint.iacr.org/2014/270.pdf)
 - [SoK: General Purpose Compilers for Secure Multi-Party Computation](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8835312)
+- [FASE: FPGA Acceleration of Secure Function Evaluation](https://aceslab.org/sites/default/files/FASE.pdf)
