@@ -16,6 +16,7 @@
 * It addresses the limitations of previous approaches by ensuring that data accesses are mostly local, thus significantly reducing data movement costs.
 
 ## Data Structures
-* SKIP LIST : Paper [The Processing-in-Memory Model ](https://www.cs.ucr.edu/~ygu/papers/SPAA21/PIM.pdf) presented an efficient skip list for the model, supporting a wide range of batch-parallel operations.
+The paper [Concurrent Data Structures with Near-Data-Processing: an Architecture-Aware Implementation](https://jiwon-choe.github.io/spaa19-choe.pdf) perform evaluation on the folloowng data structures 
+* SKIP LIST : Paper [The Processing-in-Memory Model ](https://www.cs.ucr.edu/~ygu/papers/SPAA21/PIM.pdf) presented an efficient skip list for the model, supporting a wide range of batch-operations from point operations to range operations 
 * FIFO
 * LINKED LIST
