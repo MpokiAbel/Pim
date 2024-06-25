@@ -1,6 +1,6 @@
 # The Processing-in-Memory Model
 
- ![PIM Model](image URL)
+ ![PIM Model](PIM-Model.png)
 
 ## Key components of the model
 * CPU-side: Parallel cores with fast access to a small shared memory.
