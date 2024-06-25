@@ -16,4 +16,6 @@
 * It addresses the limitations of previous approaches by ensuring that data accesses are mostly local, thus significantly reducing data movement costs.
 
 ## Data Structures
-* 
+* SKIP LIST
+* FIFO
+* LINKED LIST
