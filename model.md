@@ -1,4 +1,5 @@
 # The Processing-in-Memory Model
+![PIM Model](image URL)
 ## Key components of the model
 * CPU-side: Parallel cores with fast access to a small shared memory.
 * PIM-side: Multiple PIM modules, each with a core and a local memory of size Θ(n/P) for an input of size n.
