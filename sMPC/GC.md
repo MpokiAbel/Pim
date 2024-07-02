@@ -3,7 +3,7 @@ This project is about Garbled Circuits, and their integration with the UPMEM PIM
 
 ## Project RoadMap
 -  [ ] Implements a simple GC computation
--  [ ] Indentify parallelism and concurency : From the literature review, parallelism and concurency should come from the per gate evaluations.
+-  [ ] Indentify parallelism and concurency : From the literature review, parallelism and concurency should come from the per gate evaluations. Howerver this is not trivial due to concurency most circuits, hence parallelism higly depends on the circuit structure.
 
 # Garbled Circuit
 A cryptographic protocol that enable two mistrusting parties to evaluate a function without revealing their private input without presence of third trusted party. For better explanation of the protocol visit [here](https://en.wikipedia.org/wiki/Garbled_circuit). There are quite a few libraries with GC implementations, here is a non-exhastive list:
